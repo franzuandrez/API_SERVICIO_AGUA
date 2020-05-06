@@ -14,6 +14,9 @@ namespace API_SERVICIO_AGUA.Models
         public string username { get; set; }
         public string password { get; set; }
         
+        public List<Orden> ordenes_asignadas { get; set; }
+
+        public List<Orden> ordenes_despachadas { get; set; }
 
 
 
