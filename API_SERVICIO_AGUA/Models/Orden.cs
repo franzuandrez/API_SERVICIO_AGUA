@@ -9,29 +9,29 @@ namespace API_SERVICIO_AGUA.Models
     public class Orden
     {
         [Key]
-        public int id_orden { get; set; }
-        public string no_orden { get; set; }
+        public int IdOrden { get; set; }
+        public string NoOrden { get; set; }
 
-        public int estado { get; set; }
+        public int Estado { get; set; }
 
-        public DateTime fecha { get; set; }
+        public DateTime Fecha { get; set; }
 
-        public int id_motivo { get; set; }
-        public Motivo motivo { get; set; }
-
-
-        public int id_medidor { get; set; }
-        public Medidor medidor { get; set; }
+        public int IdMotivo { get; set; }
+        public Motivo Motivo { get; set; }
 
 
-        public int id_usuario_asignador { get; set; }
-        public Usuario usuario_asignador { get; set; }
-
-        public int id_usuario_despacha { get; set; }
-        public Usuario usuario_despacha { get; set; }
+        public int IdMedidor { get; set; }
+        public Medidor Medidor { get; set; }
 
 
-        public List<Foto> fotos { get; set; }
+        public int IdUsuarioAsignador { get; set; }
+        public Usuario UsuarioAsignador { get; set; }
+
+        public int IdUsuarioDespacha { get; set; }
+        public Usuario UsuarioDespacha { get; set; }
+
+
+        public List<Foto> Fotos { get; set; }
 
     }
 }

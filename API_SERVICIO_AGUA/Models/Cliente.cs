@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,12 +8,13 @@ namespace API_SERVICIO_AGUA.Models
 {
     public class Cliente
     {
-        public int id_cliente { get; set; }
-        public string nit { get; set; }
-        public string nombre { get; set; }
-        public string apellido { get; set; }
-        public string direccion { get; set; }
+        [Key]
+        public int IdCliente { get; set; }
+        public string Nit { get; set; }
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
+        public string Direccion { get; set; }
 
-        public List<Medidor> medidores { get; set; }
+        public List<Medidor> Medidores { get; set; }
     }
 }

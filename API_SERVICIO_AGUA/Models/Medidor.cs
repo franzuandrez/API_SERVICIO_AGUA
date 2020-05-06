@@ -1,17 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace API_SERVICIO_AGUA.Models
 {
     public class Medidor
-    {
-        public int id_medidor { get; set; }
-        public string no_medidor { get; set; }
 
-        public int id_cliente { get; set; }
-        public Cliente cliente { get; set; }
+    {
+        [Key]
+        public int IdMedidor { get; set; }
+        public string NoMedidor { get; set; }
+
+        public int IdCliente { get; set; }
+        public Cliente Cliente { get; set; }
 
 
     }

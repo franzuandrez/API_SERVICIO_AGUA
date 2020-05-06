@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,16 +8,16 @@ namespace API_SERVICIO_AGUA.Models
 {
     public class Usuario
     {
-
-        public int id_usuario { get; set; }
-        public string nombre { get; set; }
-        public string apellido { get; set; }
-        public string username { get; set; }
-        public string password { get; set; }
+        [Key]
+        public int IdUsuario { get; set; }
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
         
-        public List<Orden> ordenes_asignadas { get; set; }
+        public List<Orden> OrdenesAsignadas { get; set; }
 
-        public List<Orden> ordenes_despachadas { get; set; }
+        public List<Orden> OrdenesDespachadas { get; set; }
 
 
 

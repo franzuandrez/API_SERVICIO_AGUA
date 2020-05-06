@@ -9,11 +9,11 @@ namespace API_SERVICIO_AGUA.Models
     public class Foto
     {
         [Key]
-        public int id_foto { get; set; }
-        public string path { get; set; }
+        public int IdFoto { get; set; }
+        public string Path { get; set; }
 
-        public int id_orden { get; set; }
+        public int IdOrden { get; set; }
 
-        public Orden orden { get; set; }
+        public Orden Orden { get; set; }
     }
 }
