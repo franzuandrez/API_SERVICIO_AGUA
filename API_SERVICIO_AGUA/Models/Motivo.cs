@@ -10,5 +10,6 @@ namespace API_SERVICIO_AGUA.Models
         public int id_motivo { get; set; }
         public string descripcion { get; set; }
 
+        public List<Orden> ordenes { get; set; }
     }
 }

@@ -11,6 +11,8 @@ namespace API_SERVICIO_AGUA.Models
         public string no_medidor { get; set; }
 
         public int id_cliente { get; set; }
+        public Cliente cliente { get; set; }
+
 
     }
 }
